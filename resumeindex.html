@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Generator - Premium</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/resumestyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Resume Generator</h1>
+
+        <div class="resume-builder">
+            <form id="resumeForm">
+                <label>Full Name:</label>
+                <input type="text" id="name" oninput="updatePreview()">
+
+                <label>Email:</label>
+                <input type="email" id="email" oninput="updatePreview()">
+
+                <label>Phone:</label>
+                <input type="text" id="phone" oninput="updatePreview()">
+
+                <label>Professional Summary:</label>
+                <textarea id="summary" oninput="updatePreview()"></textarea>
+
+                <label>Work Experience:</label>
+                <textarea id="experience" oninput="updatePreview()"></textarea>
+
+                <label>Education:</label>
+                <textarea id="education" oninput="updatePreview()"></textarea>
+
+                <label>Skills:</label>
+                <textarea id="skills" oninput="updatePreview()"></textarea>
+
+                <button type="button" onclick="downloadPDF()">Download as PDF</button>
+            </form>
+        </div>
+
+        <div class="resume-preview" id="resumeOutput">
+            <h2>Live Resume Preview</h2>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/YOUR_GITHUB_USERNAME/YOUR_REPO_NAME/resumescript.js"></script>
+</body>
+</html>
